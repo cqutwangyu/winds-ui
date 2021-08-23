@@ -5,6 +5,7 @@
 
 <script>
 import G6 from '@antv/g6';
+import {getGraph} from '../utils/api.js'
 
 export default {
   name: 'HelloWorld',
@@ -19,6 +20,7 @@ export default {
   mounted() {
     console.log("mounted");
     this.initData();
+    console.log(getGraph())
   },
   methods: {
     initData() {// 初始化

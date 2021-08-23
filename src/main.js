@@ -3,9 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import Element from 'element-ui'
+import Cookies from 'js-cookie'
+Vue.use(Element, {
+  size: Cookies.get('size') || 'medium' // set element-ui default size
+})
 Vue.config.productionTip = false
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
